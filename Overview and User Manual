@@ -1,0 +1,9 @@
+Welcome to my CIS 152 - Data Structures final project! The purpose of this application is for colleges who have prospective college students
+to be able to filter out applicants based on their GPA in high school. Often times applications are flooded by lots of information about the student, their 
+GPA, scores, and other information. With a lot of information to go through, it woule be convenient for College's to be able to filter out people who do not
+meet their requirements by quickly entering the GPA of the applicants and taking out applications based on if their GPA meets the college's minimum requirements.
+The user starts by entering all of the GPAs of the applicants, and when they have finished entering the GPAs, the user enters -1 to move on to the next step. The
+program then sorts the GPAs in ascending order from the lowest GPA entered to the highest. After this process has completed, the user will enter the minimum GPA that
+the college requires to enter. After the user enters the target GPA, a search algorithm will filter out each GPA that is smaller than the target GPA entered. After all
+this has completed, the program finally outputs how many GPAs have been filtered from the list of potential prospects and outputs the new list of GPAs that have passed 
+inspection. Now we have a new filtered list of applicants just by taking their GPAs!
