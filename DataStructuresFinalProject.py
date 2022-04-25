@@ -1,4 +1,3 @@
-#from collections import deque
 
 class Node:
     def __init__(self, data):
@@ -24,7 +23,10 @@ class Queue:
         printval = self.front
         while printval.data < Target:
             self.elementCount = self.elementCount + 1 #We will add 1 to the current counter that starts at 0
-            Queue.dequeue(q) #if self.front is less than the target we dequeue that element
+            Queue.dequeue(q)
+
+
+            #if self.front is less than the target we dequeue that element
             printval = printval.next #move next element to the front
         return self.elementCount #return the total element count
 
@@ -95,7 +97,8 @@ if __name__ == '__main__':
     queueSize = q.size() #prints the size of the queue
 
     Target = float(input("What is the minimum cutoff GPA for this school?: "))
-
+    if Target < 0 or Target > 5:
+        raise Exception("Value must be between 0 and 5")
     print(q.linearSearch(Target), "GPA's have been removed from the list.")
     print("Remaining list: ")
     q.printSolution()
